@@ -87,10 +87,31 @@ pd.options.display.max_columns = 20
 #df.loc[df['Total'] > 500, ['Generation', 'Legendary']] = ('Test', 'Value')
 
     #Aggregating using the groupby function and mean method on a specified column
+    #The function group by has methods like count,sum,mean,mode,median.
+
 #print(df.groupby(['Type 1']).mean().sort_values('Defense', ascending=False))
+
+    #To load a dataframe in bits due to limitations of the filesize and the capability of the computer's processing power, you can do the following:
+'''
+Chunk_DF = 0
+for df_ in pd.read_csv('Modified.csv', chunksize=5):
+
+    print('Chunk DF: ',Chunk_DF)
+    print(df_)
+    Chunk_DF+=1
+    
+'''
+
 
 #print(df)
 
+'''
+That's all for now.
+
+Now that we have a contextual view of the Pandas library, we can move to more OG stuff in the near future.
+
+Thanks.
+'''
 
 
 
